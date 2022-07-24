@@ -1,0 +1,124 @@
+.heading{
+	color: black;
+	text-align: center;
+	margin-left: 38vw;
+	font-size: 3vw;
+}
+#background{
+	width:100%;
+	height: 250px;
+	margin-top: 20px;
+
+}
+#left, #right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+#main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+.navbar{
+	width:100%;
+}
+
+
+#details li{
+	list-style: none;
+}
+#left_prev,#main_prev,#right_prev{
+	width:33.33%;
+}
+#player{
+	text-align: center;
+}
+.seek_slider{
+	width: 48vw;
+	size:20vw;
+}
+/*#volume_slider{
+	margin-left:150px;
+}*/
+
+.volume_slider{
+	width:20vw;
+}
+#backward{
+	margin-top: 20px;
+	font-size: 3vw;
+
+}
+#next{
+	margin-top: 20px;
+	font-size: 3vw;
+
+}
+#play{
+	margin-top: 15px;
+	font-size: 5vw;
+
+}
+
+#backward:hover{
+	cursor: pointer;
+}
+
+.playpause-track:hover{
+	cursor: pointer;
+}
+
+#next:hover{
+	cursor: pointer;
+}
+
+.seek_slider:hover{
+	cursor: pointer;
+	font-size :100vw;
+}
+.current-time{
+	font-size: 1.2vw;
+}
+.total-duration{
+	font-size: 1.2vw;
+}
+#volume
+{
+	width:75%;
+}
+
+#autoplay_btn{
+	width: 25%;
+}
+.volume_slider:hover{
+	cursor: pointer;
+}
+#auto{
+	margin-bottom: 2vw;
+	background-color: white;
+	font-size: 1.2vw;
+	margin-left: 5vw;
+}
+#auto:hover{
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px)
+{
+	#left, #main, #right , .navbar
+	{
+		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+	.column{
+		width:100%;
+	}
+	.column_end{
+		width: 100%
+	}
+
+	.seek_slider{
+		width: 95vw;
+		size:20vw;
+	}
+}

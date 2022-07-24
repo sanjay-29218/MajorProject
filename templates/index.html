@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/basicscroll/2.0.0/basicScroll.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom1.css') }}">
+</head>
+<body>
+	<div class="header">
+		<div class="titleContainer">
+			<h1>Mood & Music
+				<div class="row"><h3 style="text-align: center; font-size: 5vh;">Listen music according to your mood &nbsp</h3><i class="fas fa-icons" style="font-size: 4vh;"></i></div>
+			</h1>
+
+			<div class="backgroundImage" style="background-image: url({{ url_for('static', filename='img/background.jpg') }});">
+			</div>
+
+
+		</div>
+
+	</div>
+	<div class="content">
+		<h2>Capture your emotion</h2>
+		<br><br><br>
+		<p>
+			<a href="{{ url_for('music') }}" type="button" class="btn">Get started</a>
+		</p>
+	</div>
+
+</body>
+<script src="{{ url_for('static', filename='js/camera.js') }}">	
+</script>
+</html>
